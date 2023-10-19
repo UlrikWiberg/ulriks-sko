@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Ulriks sko</title>
-    </head>
-    <body>
-        <div id="grid-container">
+        <title>Oblig 4</title>
+</head>
+<body>
+    <div id="grid-container">
         <header>
             <nav>
-                <a href="index.html" id="Logo">Logo</a>
+                <a href="#" id="Logo">Logo</a>
                 <div>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i id="ham" class="fa-solid fa-bars"></i>
@@ -21,7 +22,7 @@
                 <ul class="navbar">
                     <li><a href="kasse.html">Handlekurv</a></li>
                     <li><a href="produkt.html">Produkter</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Om oss</a></li>
                 </ul>
             </nav>
         </header>
@@ -67,20 +68,17 @@
                 <i class="fa-brands fa-twitter"></i>
             </ul>
         </footer>
-        </div>
-        <script>
+    </div>
+    <script>
+               let x = document.querySelector(".navbar")
 
-            let x = document.querySelector(".navbar")
-
-            document.getElementById("ham").addEventListener("click", (e) =>{
-                if (x.className === "navbar") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "navbar"
-                }
-            })
-
-        </script>
-        </div>
-    </body>
+            document.getElementById("ham").addEventListener("click", (e) => {
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar"
+            }
+        })
+    </script>
+</body>
 </html>

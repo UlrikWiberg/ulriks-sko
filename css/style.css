@@ -10,6 +10,12 @@ body {
 header main footer {
     padding: 1rem;
 }
+
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+}
     
 #Logo {
     text-decoration: none;
@@ -17,6 +23,14 @@ header main footer {
 
 .navbar {
     display: none;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    justify-content: space-between;
+
 }
 
 .responive {
@@ -28,6 +42,13 @@ header main footer {
     top: 40px;
     width: 100%;
     list-style: none;
+}
+
+.responive a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 .black-btn {
@@ -68,6 +89,8 @@ footer nav ul li a {
 
     #ham, .fa-magnifying-glass{
         display: none;
-}
+    }
+
+
 
 }
