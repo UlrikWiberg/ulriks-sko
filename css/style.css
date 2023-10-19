@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "banner" "main" "footer";
+}
+
+header main footer {
+    padding: 1rem;
+}
+    
+#Logo {
+    text-decoration: none;
+}
+
+.navbar {
+    display: none;
+}
+
+.responive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.black-btn {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+}
+
+footer nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 0.5rem;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+@media only screen and (min-width:600px){
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    #ham, .fa-magnifying-glass{
+        display: none;
+}
+
+}
