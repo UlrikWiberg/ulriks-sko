@@ -14,10 +14,14 @@
     <div id="grid-container">
         <header>
             <nav>
-                <a href="#" id="Logo">Logo</a>
-                <div>
+                <div class="nav1">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                <a href="#" id="Logo">Ulriks sko</a>
+                <div class="nav2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-user"></i>
                 </div>
                 <ul class="navbar">
                     <li><a href="kasse.html">Handlekurv</a></li>
@@ -26,59 +30,76 @@
                 </ul>
             </nav>
         </header>
-        <banner>
-            <img src="#" alt="sko">
-            <article>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="produkt.html" class="black-btn">Shop nå</a>
-            </article>
-        </banner>
         <main>
-            <section>
-                    <h1>Kategorier</h1>
+            <banner>
+                <img src="img/running-shoe-300x200.jpg" alt="blå sko">
+                Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Pixabay</a>
+                <article>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="produkt.html" class="black-btn">Shop nå</a>
+                </article>
+            </banner>
+                <h2>Kategorier</h2>
+            <section class="kategorier">
+                    <a href="produkt.html" class="herre-btn">Herre</a>
+                    <a href="produkt.html" class="dame-btn">Dame</a>
             </section>
-            <section>
-                    <h1>Nyheter</h1>
+                <h2>Nyheter</h2>
+            <section class="nyheter">
+                <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde">
+                <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde">
+                <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde">
             </section>
-            <section>
-                    <h1>mest populære</h1>
+                <h2>Mest populære</h2>
+            <section class="mest-populare">
+                <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde">
+                <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde">
+                <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde">
             </section>
             <section id="subscribe">
                 <form>
-                    <h2>Hold deg oppdatert</h2>
+                    <h3>Hold deg oppdatert</h3>
                     <label for="email.signup">Epost</label>
                     <input type="text" id="email.signup">
-                    <input type="submit" value="Abboner">
+                    <input type="submit" value="Abonner">
                 </form>
             </section>
         </main>
         <footer>
-            <nav>
-                <ul>
-                    <li><a href="#">min konto</a></li>
-                    <li><a href="#">hjelp</a></li>
-                    <li><a href="#">om oss</a></li>
-                    <li><a href="#">vilkår</a></li>
+            <section class="ul">
+                <ul class="ul1">
+                    <h4>min konto</h4>
+                    <li><a href="#">logg inn</a></li>
+                    <li><a href="#">registrer deg</a></li>
+                    <li><a href="#">ordrestatus</a></li>
                 </ul>
-            </nav>
-            <ul>
+                <ul class="ul2">
+                    <h4>hjelp</h4>
+                    <li><a href="#">sending</a></li>
+                    <li><a href="#">retur</a></li>
+                    <li><a href="#">størrelseguide</a></li>
+                </ul>
+                <ul class="ul3">
+                    <h4>om oss</h4>
+                    <li><a href="#">vår historie</a></li>
+                    <li><a href="#">kundeservice</a></li>
+                    <li><a href="#">bærekraft</a></li>
+                </ul>
+                <ul class="ul4">
+                    <h4>vilkår</h4>
+                    <li><a href="#">vilkår for bruk</a></li>
+                    <li><a href="#">kjøpsvilkår</a></li>
+                    <li><a href="#">presonværn</a></li>
+                </ul>
+            <ul class="ul5">
+                <h4>Følg oss</h4>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-twitter"></i>
             </ul>
+            </section>
         </footer>
     </div>
-    <script>
-               let x = document.querySelector(".navbar")
-
-            document.getElementById("ham").addEventListener("click", (e) => {
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else {
-                x.className = "navbar"
-            }
-        })
-    </script>
 </body>
 </html>
