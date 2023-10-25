@@ -74,17 +74,9 @@ header nav {
     text-decoration: none;
 }
 
-banner {
-    grid-area: banner;
-}
-
-banner img {
-    width: 100%;
-}
-
-banner article {
+.promotering {
+    font-size: 2rem;
     text-align: center;
-    font-size: 2em;
 }
 
 .black-btn {
@@ -352,14 +344,4 @@ footer ul li a {
         grid-column-start: 4;
         grid-column-end: 5;
     }
-
-    .ul5 {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 5;
-        grid-column-end: 6;
-    }
-
-
-
 }
