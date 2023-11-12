@@ -74,6 +74,23 @@ header nav {
     text-decoration: none;
 }
 
+.main-content {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+}
+
+.main-content:active, .main-content:focus {
+    color: 000;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+}
+
 .promotering {
     font-size: 2rem;
     text-align: center;
@@ -156,6 +173,10 @@ main img {
     max-width: 200px;
 }
 
+.prod1 article span {
+    display: none;
+}
+
 .prod1 {
     display: flex;
     flex-wrap: wrap;
@@ -207,10 +228,6 @@ main img {
     justify-content: space-evenly;
 }
 
-#kasse h4 {
-    color: gray;
-}
-
 .sammendrag img {
     width: 100%;
 }
@@ -219,8 +236,8 @@ main img {
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
-    background-color: darkgray;
-    color: gray;
+    background-color: black;
+    color: white;
     border-radius: 5px;
     font-weight: 400;
 }

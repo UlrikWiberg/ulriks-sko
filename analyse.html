@@ -1,0 +1,89 @@
+<body>
+    <main>
+        <h1>Analyse av nettstedet</h1>
+        <section>
+            <img src="img/google trends.png">
+            <img src="img/google trends stigende.png">
+            <p>På Google trends så jeg at flere ulike typer vintersko hadde blitt søkt på mye. Jeg har valgt å bruke nøkkelord Vintersko, Uggs og Moon boots. Jeg valgte de fordi det er sesong for det, og de er trendy som målgruppen av nettsiden er opptatt av. Jeg har også valgt å bruke nøkkelord Hoka og Nike siden disse er populære merker blant målgruppen.</p>
+        </section>
+        <section>
+            <h2>SEO Analyse</h2>
+            <h3>Lighthouse analyse av forside</h3>
+            <img src="img/lighthouse forside.png">
+            <p>på analysen sto det at jeg har mulighet til å spare 0.65s lastetid hvis jeg kutter ned elementer som tar unødvendig mye plass. det sto også at jeg kan sette en fast bredde og høyde på bildene for å forbedre CLS. Jeg bør også minimere store layout shifts ved å ta disse stegene vil jeg forbedre performence på nettsiden. Accessibility var bra med en perfektt 100 score. Det sto også at jeg manglet en Content Security Policy (CSP) som reduserer risiko for XSS angrep, siden nettstedet kun er lagt ut på skoleserveren er dette ikke viktig. På SEO fikk jeg advarsel om at siden ikke har Meta beskrivelse, Meta beskrivlse hjelper siden med å få mer trafikk, og får siden til å virke mer relevant i søke resultater. Noen av knappene er også ikke mobilvennlig siden størrelsen gjør de vanskelig å trykke på</p>
+            <h3>Lighthouse analyse av produktside</h3>
+            <img src="img/lighthouse produktside.png">
+            <p>På analysen sto det at jeg kunne forbedre performance ved å sette fast bredde og høyde på bildene. Accessability hadde en perfekt 100 score og ingen varslinger. På SEO sto det at siden ikke hadde en Meta beskrivelse, anchor taggene hadde ikke en href som førte til et sted, som gjør siden mindre crawl vennlig. Noen knapper var også vannskelig å trykke på for mobil som kan gjøre det vanskelig å navigere.</p>
+            <h3>Lighthouse analyse av kasseside</h3>
+            <img src="img/lighthouse kasseside.png">
+            <p>På kassesiden fikk jeg varsling om at bildene ikke hadde en fast bredde og høyde. Siden kunne hatt bedre Accessability omg jeg ikke hadde hoppet over nivåer på heading. På SEO fikk jeg varsling om at siden ikke hadde en META beskrivelse, og at knappene ikke var mobilvennlige siden størrelsen ikke var riktig. </p>
+        </section>
+        <section>
+            <h2>UU Analyse</h2>
+            <h3>webaim anlyse av forside</h3>
+            <img src="img/webaim forside.png">
+            <p>forsiden på webaim hadde ingen errors men 3 varslinger. siden har 9 features som er bra, og 19 structural elements</p>
+            <h4>varslinger fra analysen</h4>
+            <img src="img/index-alerts.png">
+            <p>varslingene var at jeg ikke hadde første nivå heading altså h1, jeg hadde også 2 linker som førte til samme side. grunnen til at h1 er viktig er at det gir siden struktur, det gir også siden navigasjon for brukere som bruker assisterende teknologi. to linker som fører til samme url fører til at tastatur og skjerm leser brukere får ekstra navigasjon</p>
+            <h3>webaim anlyse av produktside</h3>
+            <img src="img/webaim produktside.png">
+            <p>produktsiden på webaim hadde ingen errors men 1 varsling. siden har 13 features som er bra, og 17 structural elements</p>
+            <h4>varslinger fra analysen</h4>
+            <img src="img/produkt-alerts.png">
+            <p>varslingen var at jeg ikke hadde første nivå av heading altså h1</p>
+            <h3>webaim anlyse av kasseside</h3>
+            <img src="img/webaim kasse (2).png">
+            <p>kassesiden hadde en contrast error, 4 varslinger, 2 features og 21 structural elements</p>
+            <h4>varslinger fra analysen</h4>
+            <img src="img/kasse-alerts (2).png">
+            <p>Contrast error er fordi det ikke var stor nok forksjell på fargene mellom tekst og bakgrunn. varslingene var at jeg ikke har første nivå heading, og at jeg hoppet over et nivå av heading. å hoppe over et heading nivå er ikke bra, forid brukere som bruker assisterende teknologi kan få vanskligheter med å navigere når heading nivå er hoppet over. jeg fikk også to varslinger på at noe som ser ut som heading ikke er heading. Dette er ikke bra siden det ødelegger strukturen til nettsiden.</p>
+        </section>
+        <section>
+            <h2>Anbefalinger fra Chatgpt</h2>
+            <p>Jeg spurte chatgpt om å analysere koden basert på UU og SEO, jeg fikk anbefalinger om å forbedre SEO ved bruk av mer spesifike nøkkelord i title for eksempel å endre det fra "Ulriks Sko" til "Ulriks Sko - Online Shoe Store" Jeg fikk også anbefalt å legge til en META beskrivelse for å forbedre søkemotor resultater. Chat gpt anbefalte at jeg skulle sørge for at alle linker fører til relevante siden, og alt alt-tagggene hadde beskrivende og relevante nøkkelord. På produktsiden fikk jeg anbefalt å ha en mer beskrivende title for eksempel å endre fra "Ulriks sko" til "Ulriks sko - Men's shoes". Jeg ble anbefalt å ha mer tekstlig content for å beskrive produktene, og legge til en META beskrivelse. På Kassesiden ble jeg anbefalt og oppdatere title til noe mer beskrivende som "Ulriks sko - Checkout". Jeg ble også anbefalt å legge til mer content som guider brukerene gjennom checkout prossesen, og legge til en relevant META beskrivelse. jeg ble også anbefalt å ha bedre contrast mellom tekst og bakgrunn. For fobedret SEO ble jeg anbefalt å inkludere ARIA roller og atributter, lang atributtet er satt til en altså engelsk som ikke stemmer med nettsiden, dette ble jeg anbefalt å endre. Jeg spurte deretter Chatgpt om mer spesifike løsninger, jeg spurte hva Chatgpt ville valgt som META beskrivelse, her ble det forklart at META beskrivelsen bør inneholde relevante nøkkelord og beskrive innholdet til nettsiden på en konsis måte. Jeg ble også anbefalt å inkludere ARIA-label ved bruk av ikoner.</p>
+        </section>
+        <section>
+            <h2>Sammenlikning av resultater</h2>
+            <table>
+                <tr>
+                    <th>Lighthouse</th>
+                    <th>Webaim</th>
+                    <th>Chatgpt</th>
+                </tr>
+                <tr>
+                    <td>Legge til META beskrivlese</td>
+                    <td>Juster størrelse på knapper</td>
+                    <td>Ikke hoppe over heading nivåer</td>
+                </tr>
+                <tr>
+                    <td>Første nivå heading</td>
+                    <td>Linker som fører til samme side</td>
+                    <td>Ikke hoppe over heading nivåer</td>
+                </tr>
+                <tr>
+                    <td>Legge til nøkkelord</td>
+                    <td>Legge til META beskrivelse</td>
+                    <td>Juster størrelse på knapper</td>
+                </tr>
+            </table>
+            <p>Chatgpt og Lighthouse reagerer begge på at jeg ikke har med META beskrivelse, Webaim og Lighthouse reagerer begge at jeg har hoppet heading nivå. både chatgpt og Lighthouse reagerte på at knappene var får små ikke var mobilvennlige. Alt dette er noe jeg bør fikse på. Webaim har reagert på at jeg har to linker som fører til samme side, dette har ikke Lighthouse og Chatgpt reagert på, men er fortsatt noe jeg burde fikse. Webaim har også reagert på at jeg ikke har første nivå header (h1).</p>
+        </section>
+        <section>
+            <h2>Forbedrende tiltak</h2>
+            <ul>
+                <li>META beskrivelse</li>
+                <li>ikke hoppe over heading nivåer</li>
+                <li>ha med h1</li>
+                <li>større knapper</li>
+                <li>Mer beskrivende titler</li>
+                <li>mer beskrivende alt tagger</li>
+                <li>endre lang fra engelsk til norsk</li>
+                <li>bedre kontrast på kassesiden</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Resultater etter tiltak</h2>
+        </section>
+    </main>
+</body>

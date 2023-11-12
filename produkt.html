@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herresko">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Ulriks sko</title>
+    <title>Ulriks sko - Herre sko</title>
 </head>
 <body>
+    <a href="#produkter" class="main-content" tabindex="1">skip to main</a>
     <div class="grid-container">
         <header>
-            <nav>
+            <nav aria-label="navigasjon">
                 <div class="nav1">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i id="ham" class="fa-solid fa-bars"></i>
@@ -22,20 +24,22 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                     <i class="fa-regular fa-user"></i>
                 </div>
-                <ul class="navbar">
+                <ul class="navbar" aria-label="navigasjon">
                     <li><a href="kasse.html">Handlekurv</a></li>
                     <li><a href="produkt.html">Produkter</a></li>
-                    <li><a href="#">Om oss</a></li>
+                    <li><a href="analyse.html">SEO og UU analyse</a></li>
                 </ul>
             </nav>
         </header>
+        <h1>Produktside</h1>
         <main>
             <section class="knapper">
+                <h2>Konfigurer</h2>
                 <a href="#" id="kategori-btn">Herre</a>
                 <a href="#" id="filter-btn">Filter</a>
             </section>
             <div id="produkter">
-                <aside class="sidemeny">
+                <aside class="sidemeny" aria-label="navigasjon">
                     <h2>Alle herresko</h2>
                     <ul>
                         <li><a>Sneakers</a></li>
@@ -47,23 +51,145 @@
                         <li><a>Skateboarding</a></li>
                     </ul>
                 </aside>
-            <section class="prod1">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
-                <img src="img/200x200-placeholder.jpg" alt="grå-grå-placeholder-bilde">
+            <section class="prod1" aria-label="produkter">
+                <div itemscope itemtype="http://schema.org/Product">
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                    <article imtemprop="offers" itemscop itemtype="http://scheme.org/ImageObject">
+                        <img src="img/200x200-placeholder.jpg" alt="grå-placeholder-bilde" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <span itemprop="name">Sko</span>
+                        <span itemprop="description">Blå sko</span>
+                        <span itemprop="price" content="Your Price">699</span>
+                        <span itemprop="aggregateRating"></span>
+                        <span itemprop="ratingvalue">4.5</span>
+                        <span itemprop="bestRating">5</span>
+                        <span itemprop="reviewCount">100</span>
+                        <link itemprop="availability" href="http://schema.org/InStock" />
+                    </article>
+                </div>
             </section>
             </div>
         </main>
-        <footer>
+        <footer aria-label="informasjon">
             <section class="ul">
                 <h3>min konto</h3>
                 <ul class="ul1">
