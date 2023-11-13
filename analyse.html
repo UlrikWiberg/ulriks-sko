@@ -1,42 +1,70 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Ulriks sko - analyse</title>
+</head>
 <body>
+    <header>
+        <nav aria-label="navigasjon">
+            <div class="nav1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i id="ham" class="fa-solid fa-bars"></i>
+            </div>
+            <a href="index.html" id="Logo">Ulriks sko</a>
+            <div class="nav2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <ul class="navbar" aria-label="navigasjon">
+                <li><a href="kasse.html">Handlekurv</a></li>
+                <li><a href="produkt.html">Produkter</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h1>Analyse av nettstedet</h1>
         <section>
-            <img src="img/google trends.png">
-            <img src="img/google trends stigende.png">
+            <img src="img/google-trends.png" alt="google trends">
+            <img src="img/google-trends-stigende.png" alt="google trends">
             <p>På Google trends så jeg at flere ulike typer vintersko hadde blitt søkt på mye. Jeg har valgt å bruke nøkkelord Vintersko, Uggs og Moon boots. Jeg valgte de fordi det er sesong for det, og de er trendy som målgruppen av nettsiden er opptatt av. Jeg har også valgt å bruke nøkkelord Hoka og Nike siden disse er populære merker blant målgruppen.</p>
         </section>
         <section>
             <h2>SEO Analyse</h2>
             <h3>Lighthouse analyse av forside</h3>
-            <img src="img/lighthouse forside.png">
+            <img src="img/lighthouse-forside.png" alt="lighthouse">
             <p>på analysen sto det at jeg har mulighet til å spare 0.65s lastetid hvis jeg kutter ned elementer som tar unødvendig mye plass. det sto også at jeg kan sette en fast bredde og høyde på bildene for å forbedre CLS. Jeg bør også minimere store layout shifts ved å ta disse stegene vil jeg forbedre performence på nettsiden. Accessibility var bra med en perfektt 100 score. Det sto også at jeg manglet en Content Security Policy (CSP) som reduserer risiko for XSS angrep, siden nettstedet kun er lagt ut på skoleserveren er dette ikke viktig. På SEO fikk jeg advarsel om at siden ikke har Meta beskrivelse, Meta beskrivlse hjelper siden med å få mer trafikk, og får siden til å virke mer relevant i søke resultater. Noen av knappene er også ikke mobilvennlig siden størrelsen gjør de vanskelig å trykke på</p>
             <h3>Lighthouse analyse av produktside</h3>
-            <img src="img/lighthouse produktside.png">
+            <img src="img/lighthouse-produktside.png" alt="lighthouse">
             <p>På analysen sto det at jeg kunne forbedre performance ved å sette fast bredde og høyde på bildene. Accessability hadde en perfekt 100 score og ingen varslinger. På SEO sto det at siden ikke hadde en Meta beskrivelse, anchor taggene hadde ikke en href som førte til et sted, som gjør siden mindre crawl vennlig. Noen knapper var også vannskelig å trykke på for mobil som kan gjøre det vanskelig å navigere.</p>
             <h3>Lighthouse analyse av kasseside</h3>
-            <img src="img/lighthouse kasseside.png">
+            <img src="img/lighthouse-kasseside.png" alt="lighthouse">
             <p>På kassesiden fikk jeg varsling om at bildene ikke hadde en fast bredde og høyde. Siden kunne hatt bedre Accessability omg jeg ikke hadde hoppet over nivåer på heading. På SEO fikk jeg varsling om at siden ikke hadde en META beskrivelse, og at knappene ikke var mobilvennlige siden størrelsen ikke var riktig. </p>
         </section>
         <section>
             <h2>UU Analyse</h2>
             <h3>webaim anlyse av forside</h3>
-            <img src="img/webaim forside.png">
+            <img src="img/webaim-forside.png" alt="webaim">
             <p>forsiden på webaim hadde ingen errors men 3 varslinger. siden har 9 features som er bra, og 19 structural elements</p>
             <h4>varslinger fra analysen</h4>
-            <img src="img/index-alerts.png">
+            <img src="img/index-alerts.png" alt="webaim">
             <p>varslingene var at jeg ikke hadde første nivå heading altså h1, jeg hadde også 2 linker som førte til samme side. grunnen til at h1 er viktig er at det gir siden struktur, det gir også siden navigasjon for brukere som bruker assisterende teknologi. to linker som fører til samme url fører til at tastatur og skjerm leser brukere får ekstra navigasjon</p>
             <h3>webaim anlyse av produktside</h3>
-            <img src="img/webaim produktside.png">
+            <img src="img/webaim-produktside.png" alt="webaim">
             <p>produktsiden på webaim hadde ingen errors men 1 varsling. siden har 13 features som er bra, og 17 structural elements</p>
             <h4>varslinger fra analysen</h4>
-            <img src="img/produkt-alerts.png">
+            <img src="img/produkt-alerts.png" alt="webaim">
             <p>varslingen var at jeg ikke hadde første nivå av heading altså h1</p>
             <h3>webaim anlyse av kasseside</h3>
-            <img src="img/webaim kasse (2).png">
+            <img src="img/webaim.kasse-(2).png" alt="webaim">
             <p>kassesiden hadde en contrast error, 4 varslinger, 2 features og 21 structural elements</p>
             <h4>varslinger fra analysen</h4>
-            <img src="img/kasse-alerts (2).png">
+            <img src="img/kasse-alerts-(2).png" alt="webaim">
             <p>Contrast error er fordi det ikke var stor nok forksjell på fargene mellom tekst og bakgrunn. varslingene var at jeg ikke har første nivå heading, og at jeg hoppet over et nivå av heading. å hoppe over et heading nivå er ikke bra, forid brukere som bruker assisterende teknologi kan få vanskligheter med å navigere når heading nivå er hoppet over. jeg fikk også to varslinger på at noe som ser ut som heading ikke er heading. Dette er ikke bra siden det ødelegger strukturen til nettsiden.</p>
         </section>
         <section>
@@ -84,6 +112,65 @@
         </section>
         <section>
             <h2>Resultater etter tiltak</h2>
+            <h3>Webaim resultater forside</h3>
+            <img src="img/resultat-forside-webaim.png" alt="webaim">
+            <p>etter å ha gjort forbedrende tiltak basert på hva analysene har reagert på har jeg 2 varslinger på webaim. disse er redundant links, jeg har bare en produktside så linken for shop herre og shop dame fører til samme side. Dette får jeg ikke endret på.</p>
+            <h3>Webaim resultater produktside</h3>
+            <img src="img/resultat-produktside-webaim.png" alt="webaim">
+            <p>jeg har ingen varslinger på produktsiden etter å ha tatt forberedende tiltak</p>
+            <h3>Webaim resultater kasseside</h3>
+            <img src="img/resultat-kassiside-webaim.png" alt="webaim">
+            <p>etter å ha tatt forbedrende tiltak på kassesiden har jeg 3 varslinger på webaim disse er at jeg har hoppet over heading nivåer, og at jeg har to umulige heading nivåer. Dette har jeg endret på men webaim reagerer fortsatt på det</p>
+            <h3>Lighthouse resultater forside</h3>
+            <img src="img/resultat-forside-lighthouse.png" alt="webaim">
+            <p>etter å ha gjort forbedrende tiltak har jeg gått opp fra 91 til 99 score på performance, gått ned fra 100 til 95 på accessability, gått opp fra 95 til 100 på best practices og gått opp fra 90 til 92 på SEO.</p>
+            <h3>Lighthouse resultater produktside</h3>
+            <img src="img/reultat-produkt-lighthouse.png" alt="lighthouse">
+            <p>etter å ha gjort forbedrende tiltak har jeg fortsatt 100 på preformance, jeg har gått ned fra 100 til 95 på accessability, jeg har holdt meg på 95 på best practices og jeg har gått opp fra 79 til 92 på SEO</p>
+            <h3>Lighthouse resultater kasseside</h3>
+            <img src="img/reultat-kasse-lighthouse.png" alt="lighthouse">
+            <p>etter å ha gjort forbedrende tiltak har jeg holdt meg på 100 performance, jeg har gått ned fra 97 til 92 på accessability, jeg har gått opp fra 95 til 100 på best practices. og jeg har gått opp fra 89 til 92 på SEO</p>
+            <p>på webaim har jeg gjort det jeg kan får å fjerne varslinger, jeg har også fått fjernet en contrast error på kassesiden, jeg har goså lagt til ARIA atributter.</p>
+            <p>På Lighthouse har jeg gått ned på accessability på noen av punktene, men alle mål var over 90 og derfor grønne som er en positiv ting.</p>
+        </section>
+        <section>
+            <h2>Skjermleserstøtte micro og meta data</h2>
+            <p>skjermleser støtte fungerte bra på nettstedet fra før av men jeg la til ARIA-labels for å gjøre det enda bedre. Nettsiden var også navigerbar med tastatur, dette sjekket jeg med å scrolle opp og ned med pil tastene og bruke tab for å navigere mellom content.</p>
+            <p>jeg la til fornuftig microdata på produktsiden ved å bruke itemprop, itemscope og itemtype tagger, jeg testet deretter dette på google sin rike resultater test, og det fungerte som det skal.</p>
+            <p>Jeg forbedret meta data med å ha mer beskrivende title tags for hver side. jeg la også til META beskrivelser i hver av sidene med relevante nøkkelord. Jeg la også til meta til sosiale medier</p>
         </section>
     </main>
+    <footer aria-label="informasjon">
+        <section class="ul">
+            <h4>min konto</h4>
+            <ul class="ul1">
+                <li><a href="#">logg inn</a></li>
+                <li><a href="#">registrer deg</a></li>
+                <li><a href="#">ordrestatus</a></li>
+            </ul>
+            <h4>hjelp</h4>
+            <ul class="ul2">
+                <li><a href="#">sending</a></li>
+                <li><a href="#">retur</a></li>
+                <li><a href="#">størrelseguide</a></li>
+            </ul>
+            <h4>om oss</h4>
+            <ul class="ul3">
+                <li><a href="#">vår historie</a></li>
+                <li><a href="#">kundeservice</a></li>
+                <li><a href="#">bærekraft</a></li>
+            </ul>
+            <h4>vilkår</h4>
+            <ul class="ul4">
+                <li><a href="#">vilkår for bruk</a></li>
+                <li><a href="#">kjøpsvilkår</a></li>
+                <li><a href="#">presonværn</a></li>
+            </ul>
+            <h4>Følg oss</h4>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </section>
+    </footer>
 </body>
+</html>
